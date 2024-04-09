@@ -1,0 +1,75 @@
+/* This is relevant to the colapsable headings in organization */
+label {
+  font-size: 1em;
+  height: 35px;
+  margin-top: 15px;
+}
+
+label:hover{
+  color: #478e78;
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  left: -9999px;
+}
+
+  /* hides unactive ul */
+input[type="checkbox"] ~ ul{
+  transform: scaleY(1);
+}
+
+  /* moves the ul down */
+input[type="checkbox"]:checked ~ ul{
+  transform-origin: top;
+  padding-bottom: 10px;
+  transition: transform .2s ease-out;
+  height: 0;
+  transform: scaleY(0);
+}
+
+label p{
+  position: relative;
+  top:-48px;
+  left: 223px;
+  height: 10px;
+  transform: scaleY(0);
+  font-weight: normal;
+}
+
+  /* Shows what is active */
+input[type="checkbox"]:checked + label{
+  transform: scaleY(1);
+}
+
+.organizaiton-header{
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+  margin-right: -35px;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.collections li {
+  margin-top: 8px;
+  width: 240px;
+  padding-left: 8px;
+  border-left: 3px solid white;
+  transition: all .4s linear;
+}
+
+.collections li:hover {
+  border-left: 3px solid #478e78;
+}
+
+.unstyled {
+  list-style: none;
+  position: relative;
+  right: 39px;
+}
+
+/* This is relevant for small details */
+footer {
+  margin-top: 0;
+}
