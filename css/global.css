@@ -4,7 +4,7 @@ body {
   padding: 0px;
 }
 
-body > * {
+body>* {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -29,11 +29,10 @@ body > * {
 
 .hero-box * {
   color: white;
-  margin: 0%;
   padding-bottom: 50px;
 }
 
-.hero-box pre{
+.hero-box pre {
   font-size: 60px;
   width: 100%;
 }
@@ -48,11 +47,12 @@ body > * {
   font-size: 4em;
 }
 
-h1.title {  
+h1.title {
   text-align: center;
 }
 
-.title, .title * {
+.title,
+.title * {
   font-family: "Sour Gummy", sans-serif;
   font-weight: 300;
 }
@@ -66,10 +66,11 @@ h1.title {
   align-items: center;
   justify-content: center;
 
-  flex-direction: column; /* has the items stack vertically*/
-  
-  
-  background-color: rgba(0,0,0,.65);
+  flex-direction: column;
+  /* has the items stack vertically*/
+
+
+  background-color: rgba(0, 0, 0, .65);
 }
 
 /* This is releant for the navigation bars */
@@ -79,10 +80,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: .5em;
-  box-shadow: 0 0 5px rgba(0,0,0,.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
   border-bottom: 1px solid white;
 
-  margin: auto;  
+  margin: auto;
 }
 
 .header-grid {
@@ -93,7 +94,9 @@ header {
   height: 3em;
 }
 
-.one, .two, .three {
+.one,
+.two,
+.three {
   box-sizing: border-box;
   height: 50%;
 
@@ -105,19 +108,19 @@ header {
 
 .one {
   grid-column: 1;
-  
+
   justify-content: left;
 }
 
 .two {
   grid-column: 2 / 6;
-  
+
   justify-content: center;
 }
 
 .three {
   grid-column: 6;
-  
+
   justify-content: right;
 }
 
@@ -129,7 +132,8 @@ header {
 
 
 
-.company-logo, .social-icons {
+.company-logo,
+.social-icons {
   height: 2.5em;
   display: block;
   transition: all 0.3s linear;
@@ -142,17 +146,20 @@ header {
 }
 
 
-header ul, footer ul {
+header ul,
+footer ul {
   margin: 0px;
   padding: 0px;
   display: flex;
 }
 
-header ul li, footer ul li {
+header ul li,
+footer ul li {
   list-style-type: none;
 }
 
-header ul li a, footer ul li a {
+header ul li a,
+footer ul li a {
   padding: .3em 15px;
 
   text-decoration: none;
@@ -163,7 +170,8 @@ header ul li a, footer ul li a {
   font-size: 16px;
 }
 
-header ul li a, footer ul li a {
+header ul li a,
+footer ul li a {
   border-left: 1px solid black;
 }
 
@@ -172,11 +180,13 @@ header ul li a:hover {
   color: #4a7c59;
 }
 
-header ul li a.first, footer ul li a.first{
+header ul li a.first,
+footer ul li a.first {
   border: 0px;
 }
 
-.company-logo:hover, .social-icons:hover  {
+.company-logo:hover,
+.social-icons:hover {
   /*filter: opacity(70%);*/
   filter: invert(41%) sepia(36%) saturate(426%) hue-rotate(85deg) brightness(96%) contrast(88%);
 }
@@ -195,11 +205,12 @@ footer {
   background-color: #e3f5ef;
   margin-top: 1em;
   height: 6em;
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
-footer div, footer ul{
+footer div,
+footer ul {
   display: flex;
   position: relative;
   padding-bottom: 0px;
@@ -226,7 +237,8 @@ footer ul a {
   transition: all .3s ease;
 }
 
-footer ul li a:hover, footer ul a:hover {
+footer ul li a:hover,
+footer ul a:hover {
   color: #4a7c59;
 }
 
@@ -240,43 +252,57 @@ footer h4 {
 
 
 /* This is relevant for organizing the content */
-.row { /* Making the rows work as a grid */
+.row {
+  /* Making the rows work as a grid */
   display: flex;
   padding-bottom: 8px;
 }
 
-.col { /* Styling general collumns for the grid */
+.col {
+  /* Styling general collumns for the grid */
   padding: 6px;
   width: 100%;
 }
 
-.img-100 { /* Making images fit 100% of the grid space they're given */
+.img-100 {
+  /* Making images fit 100% of the grid space they're given */
   width: 100%;
 }
 
-  /* Making basic styling for differently sized collumns
+/* Making basic styling for differently sized collumns
     can be used to quickly test different styling */
 .col-33 {
   width: 33.333333333%;
 }
+
 .col-30 {
   width: 30%;
   padding: 0px 20px 0 20px;
 }
+
 .col-25 {
   width: 25%;
 }
+
 .col-50 {
   width: 50%;
 }
+
 .col-66 {
   width: 66.6666666%;
 }
+
 .col-75 {
   width: 75%;
 }
 
-.col, .col-25, .col-30, .col-33, .col-50, .col-66, .col-75 {
+.col,
+.col-25,
+.col-30,
+.col-33,
+.col-50,
+.col-66,
+.col-75 {
   margin: auto;
 }
 
@@ -378,15 +404,15 @@ footer h4 {
 }
 
 .product img {
-  transform:scale(1.1);
+  transform: scale(1.1);
   width: 100%;
   height: 220px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .product img:hover {
   transition: all .2s linear;
-  transform:scale(1.3);
+  transform: scale(1.3);
 }
 
 .product *:hover {
@@ -408,7 +434,8 @@ embed {
   height: 800px;
 }
 
-.divider, h1 {
+.divider,
+h1 {
   font-family: "Sour Gummy", sans-serif;
   font-weight: 400;
 }
