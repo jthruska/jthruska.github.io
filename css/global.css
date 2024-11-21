@@ -484,7 +484,6 @@ h1 {
 }
 
 .card-img {
-  height: 190px;
   object-fit: fill;
 }
 
@@ -510,4 +509,8 @@ h1 {
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
