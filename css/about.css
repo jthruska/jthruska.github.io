@@ -1,0 +1,75 @@
+
+.title {
+  color: #256232;
+}
+
+/* This is relevant for the hero image */
+/* The text and button on top of the image */
+.overlay-container {
+  margin: 0px auto;
+  display: flex;
+}
+
+.overlay {
+  display: block;
+}
+
+.hero-box h2{
+  font-size: 66px;
+  width: 100%;
+  padding: 90px 0 20px;
+  text-align: left;
+}
+
+.hero-box p {
+  text-align: left;
+  width: 70%;
+}
+
+.hero-box {
+  background-image: url("../images/foliage.webp");
+}
+
+/* This is relevant for the reviews */
+.review h4 {
+  margin: 5px 0;
+}
+
+.rev-star {
+  width: 15px;
+  height: 15px;
+}
+
+  /* This movews the stars */
+.col-33{
+  position: relative;
+  top: 28px;
+  left: -7px;
+}
+
+.review-title {
+  position: relative;
+  top: 25px;
+  left: -7px;
+}
+
+/* This is relevant for formatting conent */
+.padL {
+  padding-right: 18px;
+}
+
+.padR {
+  padding-left: 18px;
+}
+
+img{
+  border-radius: 5px;
+}
+
+.start-top {
+  margin-top: 0px;
+}
+
+.highlight {
+  color: #b6ffe7;
+}

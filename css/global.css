@@ -1,0 +1,482 @@
+/* This is relevant for the body */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body > * {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.container {
+  transition: all 1s ease;
+  width: 70%;
+  margin: 0px auto;
+}
+
+/* This is relevant for the hero box */
+.hero-box {
+  text-align: center;
+  background-image: url("../images/banner.webp");
+  background-size: cover;
+  background-position: 25% 35%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-box * {
+  color: white;
+  margin: 0%;
+  padding-bottom: 50px;
+}
+
+.hero-box pre{
+  font-size: 60px;
+  width: 100%;
+}
+
+.hero-box p {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 4em;
+}
+
+h1.title {  
+  text-align: center;
+}
+
+.title, .title * {
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 300;
+}
+
+.overlay {
+  height: 24em;
+  margin: 0%;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column; /* has the items stack vertically*/
+  
+  
+  background-color: rgba(0,0,0,.65);
+}
+
+/* This is releant for the navigation bars */
+header {
+  background-color: #e3f5ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+  border-bottom: 1px solid white;
+
+  margin: auto;  
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+  height: 3em;
+}
+
+.one, .two, .three {
+  box-sizing: border-box;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+
+  grid-row: 1;
+}
+
+.one {
+  grid-column: 1;
+  
+  justify-content: left;
+}
+
+.two {
+  grid-column: 2 / 6;
+  
+  justify-content: center;
+}
+
+.three {
+  grid-column: 6;
+  
+  justify-content: right;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+
+.company-logo, .social-icons {
+  height: 2.5em;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.social-icons {
+  box-sizing: border-box;
+  width: 35px;
+  padding: 6px;
+}
+
+
+header ul, footer ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+header ul li, footer ul li {
+  list-style-type: none;
+}
+
+header ul li a, footer ul li a {
+  padding: .3em 15px;
+
+  text-decoration: none;
+  color: black;
+
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  font-size: 16px;
+}
+
+header ul li a, footer ul li a {
+  border-left: 1px solid black;
+}
+
+
+header ul li a:hover {
+  color: #4a7c59;
+}
+
+header ul li a.first, footer ul li a.first{
+  border: 0px;
+}
+
+.company-logo:hover, .social-icons:hover  {
+  /*filter: opacity(70%);*/
+  filter: invert(41%) sepia(36%) saturate(426%) hue-rotate(85deg) brightness(96%) contrast(88%);
+}
+
+header ul li a {
+  /* color: #4a7c59 */
+  font-weight: 500;
+}
+
+header ul li a.active {
+  /* color: #4a7c59 */
+  font-weight: 700;
+}
+
+footer {
+  background-color: #e3f5ef;
+  margin-top: 1em;
+  height: 6em;
+  display: flex; 
+  align-items: center;
+}
+
+footer div, footer ul{
+  display: flex;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+footer .container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: black;
+
+
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: black;
+  transition: all .3s ease;
+}
+
+footer ul li a:hover, footer ul a:hover {
+  color: #4a7c59;
+}
+
+footer h4 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+}
+
+
+
+
+/* This is relevant for organizing the content */
+.row { /* Making the rows work as a grid */
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.col { /* Styling general collumns for the grid */
+  padding: 6px;
+  width: 100%;
+}
+
+.img-100 { /* Making images fit 100% of the grid space they're given */
+  width: 100%;
+}
+
+  /* Making basic styling for differently sized collumns
+    can be used to quickly test different styling */
+.col-33 {
+  width: 33.333333333%;
+}
+.col-30 {
+  width: 30%;
+  padding: 0px 20px 0 20px;
+}
+.col-25 {
+  width: 25%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-66 {
+  width: 66.6666666%;
+}
+.col-75 {
+  width: 75%;
+}
+
+
+/* This is relevant a button */
+.button {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  transition: all .3s linear;
+  position: relative;
+  top: 0px;
+
+  /* Jesse, I made a few buttons, they all have different vides. */
+  /* playful new button (Inspo: Nintendo)*/
+  background-color: #4a7c59;
+  color: White;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: .15rem solid #256232;
+  text-align: left;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+  border: .15rem solid #555;
+  top: -2px;
+}
+
+/* This is relevant for dividers */
+.divider {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  color: #000;
+  font-size: 2.5em;
+  background-color: #e3f5ef;
+  padding: 10px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.divider * {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.divider .container {
+  margin: auto;
+}
+
+.in-page-link {
+  position: relative;
+  top: -120px;
+}
+
+.divider .button {
+  left: 90px;
+  padding: 5px;
+  background-color: #295245;
+  font-size: 20px;
+  color: #fff;
+  border: 0px;
+  font-weight: normal;
+}
+
+.divider .button:hover {
+  background-color: #204036;
+}
+
+/* This is relevant for products */
+.name {
+  margin-left: 0px;
+}
+
+.price {
+  text-align: right;
+}
+
+.holder {
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all .2s ease;
+}
+
+.product {
+  overflow: hidden;
+  transition: all .2s ease;
+}
+
+.product * {
+  transition: all .2s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.product img {
+  transform:scale(1.1);
+  width: 100%;
+  height: 220px;
+  object-fit:cover;
+}
+
+.product img:hover {
+  transition: all .2s linear;
+  transform:scale(1.3);
+}
+
+.product *:hover {
+  text-decoration-line: underline;
+}
+
+/* This ir relevant to chaning the background color for a small seciton */
+.diff-background {
+  background-color: #e3f5ef;
+}
+
+
+.highlight {
+  color: #b6ffe7;
+}
+
+embed {
+  width: 100%;
+  height: 800px;
+}
+
+.divider, h1 {
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+}
+
+
+/* This is relevant for cards */
+.card {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 2px 2px 5px 2px rgb(216, 235, 229, .80);
+  width: 100%;
+  height: 100%;
+
+  margin: 0px;
+
+  transition: all .3s linear;
+  position: relative;
+  top: 0px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-link .card:hover {
+  top: -.3em;
+  box-shadow: 3px 3px 10px 3px rgba(189, 223, 212, 0.8)
+}
+
+.card-img {
+  margin: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-img {
+  height: 190px;
+  object-fit: fill;
+}
+
+.card h4 {
+  color: #3c2415;
+  text-align: left;
+  font-size: 20px;
+  margin: 12px 0;
+  padding: 0px;
+}
+
+.card .text p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #222222;
+}
+
+.card .button {
+  display: block;
+  width: auto;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
