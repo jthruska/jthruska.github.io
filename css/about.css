@@ -14,16 +14,13 @@
   display: block;
 }
 
-.hero-box h2{
-  font-size: 66px;
-  width: 100%;
-  padding: 90px 0 20px;
-  text-align: left;
+.hero-box h1{
+  padding: .5em 0% .5em 0%;
+  text-align: center;
 }
 
 .hero-box p {
-  text-align: left;
-  width: 70%;
+  text-align: center;
 }
 
 .hero-box {

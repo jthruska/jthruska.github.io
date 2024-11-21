@@ -276,6 +276,10 @@ footer h4 {
   width: 75%;
 }
 
+.col, .col-25, .col-30, .col-33, .col-50, .col-66, .col-75 {
+  margin: auto;
+}
+
 
 /* This is relevant a button */
 .button {
