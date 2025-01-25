@@ -124,13 +124,6 @@ header {
   justify-content: right;
 }
 
-@media only screen and (max-width: 650px) {
-  .container {
-    width: 90%;
-  }
-}
-
-
 
 .company-logo,
 .social-icons {
@@ -304,6 +297,7 @@ footer h4 {
 .col-66,
 .col-75 {
   margin: auto;
+  box-sizing: border-box;
 }
 
 
@@ -513,4 +507,47 @@ h1 {
 
 .text-left {
   text-align: left;
+  overflow: auto;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 1.5em;
+}
+
+.text-overflow {
+  list-style-position: inside;
+  overflow: auto;
+}
+
+.margin-top {
+  margin-top: 0em;
+  margin-bottom: 4em;
+}
+
+@media only screen and (max-width: 70em) {
+  .container {
+    width: 90%;
+  }
+
+  .hide-when-narrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 85em) {
+  .hide-when-narrow {
+    display: none;
+  }
+
+  .col-50-when-narrow {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .container {
+    width: 95%;
+  }
 }
