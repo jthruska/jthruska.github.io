@@ -60,9 +60,9 @@
       <div class="col padR">
         <h1>Overview</h1>
         <p>
-          KOABC will be a web application that allows students to
+          KOABC is a web application that allows students to
           write arduino code using a block coding interface. There
-          will be multiple code complexities, optional lessons, and
+          are multiple code complexities, optional lessons, and
           arduino file downloading / uploading.
         </p>
       </div>
@@ -203,9 +203,14 @@
                 <p>
                   Since this project is heavily reliant on
                   interactive design, most high-fidelity prototyping
-                  tools would not be useful for it. Instead, development
-                  has been started in React to test different systems and
-                  UI design approaches.
+                  tools would not be useful for it. 
+                  
+                  Instead, different web development frameworks were researched
+                  and used to create rudementary prototypes of a simple drag and drop
+                  system, including Django, NextJS, Svelte, and Angular.
+
+                  From these prototypes, NextJS with React was decided on as the best
+                  tool to create the block coding website.
                 </p>
 
                 <img class="img-100" src="../../images/KOABC-Block-Code.webp" alt="low-fidelity prototype">
@@ -221,8 +226,8 @@
   </div>
 
 
-  <!-- Testing -->>
-  <h1 class="divider">Testing</h1>
+  <!-- Development -->
+  <h1 class="divider">Development</h1>
   <div class="container">
 
     <div class="row">
@@ -232,10 +237,13 @@
       </div>
 
       <div class="col padR">
-        <h1>Usability Tests</h1>
-        <p>Testing will be done over the period of a month in the spring
-          with highschoolers in the Bozeman area. These will be performed
-          using the React development version of the website.
+        <h1>Creating the Application</h1>
+        <p>
+          Originally, multiple pre-existing libraries were considered for use to enable the drag and drop interface
+          conceptualized during the prototype phase. Through research, these libraries were determined to be
+          outdated with some unresolved bugs, leading the block code editor to be developed from scratch.
+          To create the drag and drop interface, HTML drag events were combined with React's state system and
+          NextJS's routing tools in Javascript.
         </p>
       </div>
 
@@ -251,8 +259,9 @@
       </div>
       <div class="text">
         <p>
-          This project is still ongoing, though it will be completed by the
-          end of March 2025.
+          This project is currently fully functional. Server setup is currently in progress to allow
+          students throughout Montana to access the website publically. In addition, more features
+          are being added in the meantime to improve user experience and options.
         </p>
       </div>
 
